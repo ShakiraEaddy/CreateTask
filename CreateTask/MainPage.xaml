@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CreateTask.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Create Task"
+    BackgroundColor="White"
+    BackgroundImageSource="yellownotebookbackgroundimage.svg">
+    <VerticalStackLayout>
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Name"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Entry
+            Placeholder="Task Name"
+            Text="{Binding Name}"
+            WidthRequest="225" />
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Completion Time"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Timer"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Priority"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Description"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Editor
+            MaxLength=" 500"
+            Placeholder="Task Description"
+            Text="{Binding Name}"
+            WidthRequest="225" />
+        <Label
+            Margin="50,20,10,0"
+            FontSize="Medium"
+            HorizontalOptions="Start"
+            Text="Difficulty"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+        <Button
+            Margin="5"
+            BackgroundColor="Gray"
+            Text="Save"
+            TextColor="Black" />
+        <Button
+            Margin="5"
+            BackgroundColor="Gray"
+            Text="Cancel"
+            TextColor="Black" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
